@@ -7,6 +7,16 @@ const mensaje = document.querySelector(".mensaje");
 // La letra "o" es convertida para "ober"
 // La letra "u" es convertida para "ufat"
 
+function validarTexto(){
+    let textoEscrito = document.querySelector(".ingresar-texto").value;
+    let validador = textoEscrito.match(/^[a-z]*$/);
+
+    if(!validador || validador === 0) {
+        alert("Solo son permitidas letras minúsculas y sin acentos")
+        location.reload();
+        return true;
+    }
+}
 
 function botonEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
