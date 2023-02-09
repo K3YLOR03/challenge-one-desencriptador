@@ -59,5 +59,6 @@ function desencriptar(stringDesencriptada){
 function btnCopiar() {
     mensaje.select();
     document.execCommand('copy');
+    mensaje.value = "";
   }
   
