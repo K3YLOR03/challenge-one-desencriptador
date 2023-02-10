@@ -21,15 +21,17 @@ function validarTexto(){
 }
 
 function botonEncriptar(){
-    if(!validarTexto){
         const textoEncriptado = encriptar(textArea.value)
         mensaje.value = textoEncriptado
-        mensaje.style.backgroundImage = "none";
         textArea.value = "";
-        copia.style.display = "block"
+        mensaje.style.backgroundImage = "none";
     }
-    
-}
+
+let textarea = document.getElementById("textarea");
+  textarea.addEventListener("click", function () {
+    this.setSelectionRange(0, 0);
+    textArea.value = "";
+  });
 
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
