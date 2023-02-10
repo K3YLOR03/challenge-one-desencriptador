@@ -7,10 +7,6 @@
     overflow-y: hidden;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
 .logo-alura{
     position: relative;
     padding-top: 10px;
@@ -98,8 +94,28 @@ main{
     color: #082b55;
     font-size: 16px;
     opacity: 0.8;
+    margin-block: auto;
 }
 
 .informacion::before{
     content: "✦";
+}
+
+@media  screen and (max-width:480px){
+    .logo-alura{
+        width:auto;
+    }
+    main{
+        position: absolute;
+        margin-left:5px;
+        margin-top:5px;
+}
+    .botones{
+        display: inline;
+    }
+    .boton-desencriptar{
+        margin-left: auto;
+    }
+
+
 }
