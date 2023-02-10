@@ -1,5 +1,7 @@
 const textArea = document.querySelector(".ingresar-texto");
 const mensaje = document.querySelector(".mensaje");
+const copia = document.querySelector(".copiar")
+copia.style.display = "none"
 
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
@@ -19,17 +21,15 @@ function validarTexto(){
 }
 
 function botonEncriptar(){
-    const textoEncriptado = encriptar(textArea.value)
-    mensaje.value = textoEncriptado
-    textArea.value = "";
-    mensaje.style.backgroundImage = "none";
+    if(!validarTexto){
+        const textoEncriptado = encriptar(textArea.value)
+        mensaje.value = textoEncriptado
+        mensaje.style.backgroundImage = "none";
+        textArea.value = "";
+        copia.style.display = "block"
+    }
+    
 }
-
-var textarea = document.getElementById("textarea");
-  textarea.addEventListener("click", function () {
-    this.setSelectionRange(0, 0);
-    textArea.value = "";
-  });
 
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
@@ -49,7 +49,6 @@ function botonDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
-    mensaje.style.backgroundImage = "none";
 }
 
 function desencriptar(stringDesencriptada){
@@ -68,7 +67,8 @@ function desencriptar(stringDesencriptada){
 
 function btnCopiar() {
     mensaje.select();
-    document.execCommand('copy');
+    navigator.clipboard.writeText(mensaje.value)
     mensaje.value = "";
-  }
+    alert("Texto Copiado")
+}
   

@@ -4,6 +4,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    overflow-y: hidden;
 }
 
 body{
@@ -19,11 +20,12 @@ body{
 
 main{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-left: 170px;
 }
 
 .ingresar-texto{
+    height: 450px;
     border: none;
     color: #082b55;
     margin-top: 90px;
@@ -31,16 +33,16 @@ main{
 }
 
 ::placeholder{ color: #082b55;}
-
-.ingresar-texto:focus {
+    .ingresar-texto:focus {
         outline: none;
     }
 
 .mensaje{
+    height: 650px;
     background: #dfdddd;
     background-image: url("imagenes/Muñeco.png");
     background-repeat: no-repeat;
-    background-position: 0px 320px;
+    background-position: center;
     border: none;
     border-radius: 24px;
     color: #082b55;
@@ -87,9 +89,8 @@ main{
     cursor: pointer;
     height: 67px;
     width: 336px;
-    margin-left: 108px;
+    margin-left: 120px;
     margin-top: 650px;
-    position: absolute;
 }
 
 .informacion{
