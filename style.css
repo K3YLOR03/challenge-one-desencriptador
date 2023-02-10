@@ -88,9 +88,10 @@ main{
     color: #0c3b74;
     cursor: pointer;
     height: 67px;
-    width: 336px;
-    margin-left: 120px;
-    margin-top: 650px;
+    width: 350px;
+    margin-left: 105px;
+    margin-top: 605px;
+    position: absolute;
 }
 
 .informacion{

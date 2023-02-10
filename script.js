@@ -26,11 +26,12 @@ function botonEncriptar(){
         mensaje.value = textoEncriptado
         textArea.value = "";
         mensaje.style.backgroundImage = "none";
+        copia.style.display = "block"
         }
      
     }
 
-let textarea = document.getElementById("textarea");
+let textarea = document.getElementById("area-texto");
   textarea.addEventListener("click", function () {
     this.setSelectionRange(0, 0);
     textArea.value = "";
