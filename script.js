@@ -21,10 +21,13 @@ function validarTexto(){
 }
 
 function botonEncriptar(){
+    if(!validarTexto()) {
         const textoEncriptado = encriptar(textArea.value)
         mensaje.value = textoEncriptado
         textArea.value = "";
         mensaje.style.backgroundImage = "none";
+        }
+     
     }
 
 let textarea = document.getElementById("textarea");
