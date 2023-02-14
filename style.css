@@ -102,38 +102,53 @@ main{
 }
 
 @media  screen and (max-width:480px){
+    .logo{
+        margin: 0 auto;
+    }
     .logo-alura{
         width:auto;
     }
     main{
-        display: inline-block;
+        display: grid;
         margin-left:10px;
         margin-top:5px;
+        align-items: center;
+        justify-content: center;
         }
     .botones{
         display: inline;
     }
     .boton-desencriptar{
         margin-left: auto;
-        margin-top: 30px;
+        margin-top: 10px;
     }
     
     .ingresar-texto{
         width: 340px;
-        margin-top: 10px;
+        margin-top: 5px;
+        height: 30vh;
     }
 
      .copiar{
-        margin-top: 200px;
+        margin-top: 170px;
         margin-left: auto;
-         width: 340px;
-        
+        width: 340px;
     }
     .mensaje{
-        margin-top: 50px;
+        margin-top: 30px;
         width: 320px;
         height: 200px;
         margin-left: auto;
         background-image: none;
+    }
+
+    .ingresar-texto .botones{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mensaje .copiar{
+        margin: 0 auto;
     }
 }
