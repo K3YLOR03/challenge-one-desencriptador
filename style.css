@@ -106,11 +106,10 @@ main{
         width:auto;
     }
     main{
-        display: inline;
-        position: absolute;
+        display: inline-block;
         margin-left:10px;
         margin-top:5px;
-}
+        }
     .botones{
         display: inline;
     }
@@ -118,17 +117,23 @@ main{
         margin-left: auto;
         margin-top: 30px;
     }
+    
     .ingresar-texto{
+        width: 340px;
         margin-top: 10px;
-        height: 320px;
+    }
+
+     .copiar{
+        margin-top: 200px;
+        margin-left: auto;
+         width: 340px;
+        
     }
     .mensaje{
         margin-top: 50px;
-        width: 300px;
+        width: 320px;
         height: 200px;
-        margin-left: 10px;
+        margin-left: auto;
         background-image: none;
     }
-
-
 }
