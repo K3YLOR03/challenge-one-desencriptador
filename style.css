@@ -50,6 +50,7 @@ main{
 
 .mensaje::placeholder{
     text-align: center;
+    font-style: italic;
     font-size: 19px;
     color: gray;
 }
