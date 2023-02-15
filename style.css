@@ -48,6 +48,12 @@ main{
     position: fixed;
 }
 
+.mensaje::placeholder{
+    text-align: center;
+    font-size: 19px;
+    color: gray;
+}
+
 .mensaje:focus {
     outline: none;
 }
